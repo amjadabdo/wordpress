@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table de multiplication de <?php echo $_GET["l"]."*".$_GET["c"] ?> Generer</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+.hd{
+	background-color:#1a3263;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+.dg{
+	background-color:#EBD9C8;
+	font-weight: bold;
+	text-align: center;
+	color: #90007f;
+}
+th, td {
+  background-color: #41f4df;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #5e41f4;}
+</style></head>
+<body>
+	<h1 align="center">Table de multiplication de <?php echo $_GET["l"]."*".$_GET["c"]?></h1>
+	<table class="table" border="1" bgcolor="#e8e2db" >
+	<?php
+		$l=$_GET["l"];
+		$c=$_GET["c"];
+		
+		for ($i=1; $i <=$l ; $i++) { 
+
+			echo "<tr>";
+				
+			for ($j=1; $j <=$c ; $j++) { 
+				echo "<td";
+				if ($i==1 || $j==1) {
+					echo " class=\"hd\"";
+				}elseif ($i==$j) {
+					echo " class=\"dg\"";
+				}
+				echo ">".$i*$j."</td>";	
+
+		}
+		echo "</tr>";
+	}
+
+	?>
+	</table>
+
+</body>
+</html>
