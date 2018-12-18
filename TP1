@@ -1,3 +1,28 @@
+-----------------------------------------------------Formulaire------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap.css">
+	<title>Table De Multiplication</title>
+</head>
+<body>
+		<form action="table.php" method="get">
+			<div class="form-group">
+            <label>Entrer premier nombre:</label>
+            <input  class="form-control" placeholder="n=" name="l">
+            </div>
+			<label>Entrer deuxieme nombre:</label>
+            <input  class="form-control" placeholder="m=" name="c">
+            </div>
+			<input type="submit" class="btn btn-outline-primary" value="Submit"> 
+			<input type="reset" class="btn btn-outline-primary" value="Reset"> 
+		</form>
+
+</body>
+</html>
+
+------------------------------------------------Table de multiplication----------------------------------------------------------
+
 <!DOCTYPE html>
 <html>
 <head>
